@@ -9,6 +9,7 @@ class Meal(Base):
     id = Column(String ,primary_key=True, default=lambda: str(uuid4()))
     title = Column(String)
     description = Column(String)
+    calories = Column(Integer)
     date = Column(Date, default=date.today())
     user_id = Column(String, ForeignKey('user.user_id'))
 
@@ -17,7 +18,10 @@ class Meal(Base):
     def to_dict(self):
         return {
             "id": self.id,
-            "title": self.title
+            "title": self.title,
+            "description": self.description,
+            "calories": self.calories,
+            "date": self.date.isoformat() if self.date else None
         }
 
 class User(Base):
@@ -25,7 +29,7 @@ class User(Base):
     user_id = Column(String, primary_key=True, default=lambda: str(uuid4()))
     username = Column(String)
     password = Column(String)
-    date = Column(Date)
+    birthdate = Column(Date)
 
 
     meals = relationship("Meal", back_populates="user", cascade="all, delete-orphan")
@@ -35,5 +39,6 @@ class User(Base):
             "id": self.user_id,
             "username": self.username,
             "password": self.password,
-            "meals": self.meals
+            "date": self.date.isoformat() if self.date else None,
+            "meals": [meal.to_dict() for meal in self.meals]
         }

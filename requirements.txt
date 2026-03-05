@@ -1,0 +1,10 @@
+SQLAlchemy~=2.0.47
+pydantic~=2.12.5
+python-jose~=3.5.0
+passlib~=1.7.4
+flask~=3.0.0
+openai
+python-dotenv
+werkzeug
+flask-wtf
+email_validator

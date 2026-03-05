@@ -1,17 +1,10 @@
-import uvicorn
-from fastapi import FastAPI
-from app.db.database import engine, Base, Session
-from app.router import router
+from flask import Flask
+from app.db.database import engine, Base
+from app.router.router import meal
+app = Flask(__name__)
+app.secret_key = "secret_key"
 
-
-Base.metadata.create_all(bind=engine)
-
-app = FastAPI(title="Meal API")
-
-app.include_router(router.router)
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+app.register_blueprint(meal, url_prefix='/')
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    app.run(host="127.0.0.1", port=8000, debug=True)

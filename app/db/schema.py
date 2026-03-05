@@ -1,34 +1,18 @@
-from typing import List
-from pydantic import BaseModel
-from datetime import date
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField, SubmitField, TextAreaField, DateField
+from wtforms.validators import DataRequired, Length
 
-class MealBase(BaseModel):
-    title: str
-    description: str
+class CreateMealForm(FlaskForm):
+    ingredients = TextAreaField('Ingredients', validators=[DataRequired()])
+    submit = SubmitField('Create Meal')
 
-    class Config:
-        orm_mode = True
+class RegisterUserForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired(), Length(min=4, max=25)])
+    password = PasswordField('Password', validators=[DataRequired(), Length(min=6)])
+    birthdate = DateField('Birthdate', format='%Y-%m-%d', validators=[DataRequired()])
+    submit = SubmitField('Register')
 
-
-class CreateMeal(MealBase):
-    pass
-
-class ResponseMeal(MealBase):
-    id: int
-
-class CreateUser(BaseModel):
-    username: str
-    password: str
-
-class UserBase(CreateUser):
-    date: date
-    meals: List[MealBase] = []
-
-    class Config:
-        orm_mode = True
-
-class RegisterUser(CreateUser):
-    pass
-
-class ResponseUser(UserBase):
-    user_id: int
+class LoginUserForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    submit = SubmitField('Login')
