@@ -8,8 +8,7 @@ class Meal(Base):
     __tablename__ = "meal"
     id = Column(String ,primary_key=True, default=lambda: str(uuid4()))
     title = Column(String)
-    description = Column(String)
-    calories = Column(Integer)
+    url = Column(String)
     date = Column(Date, default=date.today())
     user_id = Column(String, ForeignKey('user.user_id'))
 

@@ -11,4 +11,4 @@ Base.query = session.query_property()
 
 def get_db():
     Base.metadata.create_all(bind=engine)
-
+    return session

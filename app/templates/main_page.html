@@ -1,9 +1,27 @@
 {% extends "base_page.html" %}
-{% block title %}MyMeals{% endblock %}
-
-{% block extra_styles %}
-{% endblock %}
+{% block title %}MyMeals — Пошук рецептів{% endblock %}
 
 {% block content %}
+<div class="search-wrapper">
+    <div class="search-card">
+        <h1>Знайдіть ідеальний рецепт</h1>
+        <p>Введіть інгредієнти, які у вас є, і ми знайдемо для вас страву!</p>
 
+        <form method="POST" action="{{ url_for('meal.create_meal') }}">
+            {{ form.hidden_tag() }}
+
+            <div class="form-group">
+                {{ form.ingredients.label(class="form-label") }}
+                {{ form.ingredients(placeholder="Наприклад: курка, картопля, цибуля", class="form-control") }}
+                {% for error in form.ingredients.errors %}
+                    <span class="error-message">{{ error }}</span>
+                {% endfor %}
+            </div>
+
+            <div class="form-group">
+                {{ form.submit(class="submit-btn") }}
+            </div>
+        </form>
+    </div>
+</div>
 {% endblock %}

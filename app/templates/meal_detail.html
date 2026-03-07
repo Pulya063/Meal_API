@@ -1,0 +1,26 @@
+{% extends "base_page.html" %}
+{% block title %}MyMeals — {{ meal.title }}{% endblock %}
+
+{% block content %}
+<div class="recipe-container">
+    <div class="result-card" style="grid-column: span 2;">
+        <div class="meal-result">
+            <h2 class="meal-title">{{ meal.title }}</h2>
+            <div class="meal-desc">
+                {{ meal.description }}
+            </div>
+
+            <div class="meal-meta-badges">
+                <span class="badge badge-yellow">{{ meal.calories }} ккал</span>
+                <span class="badge badge-green">{{ meal.date }}</span>
+            </div>
+
+            {% if meal.url %}
+            <div style="margin-top: 20px;">
+                <a href="{{ meal.url['strSource'] }}" target="_blank" class="btn btn-primary">Переглянути відео рецепт рецепт</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

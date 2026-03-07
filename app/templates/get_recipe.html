@@ -1,8 +1,39 @@
-{% extends "base.html" %}
-{% block title %}{{film.name}} - MyMeals{% endblock %}
-
-{% block extra_styles %}
-{% endblock %}
+{% extends "base_page.html" %}
+{% block title %}Створити страву — MyMeals{% endblock %}
 
 {% block content %}
+<h1 class="page-title">🥗 Знайти Страву</h1>
+
+<div class="recipe-container">
+    <div class="form-card">
+        <h2>Введіть інгредієнти</h2>
+        <form method="POST" action="{{ url_for('meal.create_meal') }}">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.ingredients.label }}
+                {{ form.ingredients(rows=5, placeholder="Наприклад: курка, рис, часник, морква...") }}
+            </div>
+            {{ form.submit(class="submit-btn") }}
+        </form>
+    </div>
+
+
+    {% if meal %}
+        <div class="result-card">
+            <h2>Результат від AI</h2>
+                <div class="meal-result">
+                    <div class="meal-title">{{ meal.title }}</div>
+                    <div class="meal-desc">{{ meal.description }}</div>
+                    <div class="meal-meta-badges">
+                        <span class="badge badge-green">✅ Страва збережена</span>
+                    </div>
+                </div>
+    {% else %}
+            <div class="empty-result">
+                <span class="icon">🤖</span>
+                <p>Введіть інгредієнти — AI запропонує страву</p>
+            </div>
+        </div>
+    {% endif %}
+</div>
 {% endblock %}

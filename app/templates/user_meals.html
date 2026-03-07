@@ -1,0 +1,30 @@
+{% extends "base_page.html" %}
+{% block title %}MyMeals — Страви користувача{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>🍽️ Страви користувача</h1>
+    <a href="{{ url_for('meal.create_meal') }}" class="btn-create">+ Створити страву</a>
+</div>
+
+{% if meals %}
+    <div class="meals-grid">
+        {% for meal in meals %}
+            <a href="{{ url_for('meal.get_meal_detail', meal_id=meal.id) }}" class="meal-card" style="text-decoration: none; display: block;">
+                <h3>{{ meal.title }}</h3>
+                <p>{{ meal.description | truncate(100) }}</p>
+                <div class="meal-meta">
+                    <span>{{ meal.date }}</span>
+                    <span class="calories-badge">{{ meal.calories }} ккал</span>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+{% else %}
+    <div class="empty-state">
+        <span class="icon">🍴</span>
+        <p>Цей користувач ще не створив жодної страви.</p>
+        <a href="{{ url_for('meal.create_meal') }}" class="btn-create">+ Створити першу страву</a>
+    </div>
+{% endif %}
+{% endblock %}

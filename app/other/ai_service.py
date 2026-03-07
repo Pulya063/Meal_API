@@ -1,16 +1,17 @@
-import openai
 import os
 from dotenv import load_dotenv
+from google import genai
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def generate_meal_details(title: str):
-    prompt = f"Ти професійний дієтолог. Напиши назви страв за цими інгредієнтами '{title}'. Відповідь має бути у форматі: 'Назва страви: '."
+    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-    response = openai.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": prompt}]
+    prompt = f"You are a professional nutritionist. Write the name of the dish using these ingredients: '{title}'. The answer should be in the following format and in english: 'First word of the name of the dish'"
+
+    response = client.models.generate_content(
+        model="gemini-2.5-flash",
+        contents=prompt,
     )
 
-    return response.choices[0].message.content
+    return response.text

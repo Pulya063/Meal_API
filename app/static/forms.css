@@ -1,0 +1,208 @@
+/* ============================================
+   forms.css — стиль для окремих сторінок форм
+   Використовується: login_page.html, register_page.html
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap');
+
+/* --- Reset & Base --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --clr-bg:        #f4f1ec;
+  --clr-surface:   #ffffff;
+  --clr-primary:   #2b4141;
+  --clr-accent:    #d4845a;
+  --clr-accent-lt: #f5e6db;
+  --clr-success:   #3a7d5a;
+  --clr-error:     #c0392b;
+  --clr-text:      #1e2a2a;
+  --clr-muted:     #7a8a8a;
+  --clr-border:    #ddd8d0;
+  --radius:        14px;
+  --shadow:        0 8px 40px rgba(43,65,65,0.13);
+  --font-display:  'Playfair Display', Georgia, serif;
+  --font-body:     'DM Sans', sans-serif;
+}
+
+html { font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* subtle texture */
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(212,132,90,0.07) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(43,65,65,0.06) 0%, transparent 50%);
+}
+
+/* --- Auth wrapper --- */
+.auth-wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 24px 20px;
+}
+
+/* --- Logo --- */
+.auth-logo {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.auth-logo a {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  color: var(--clr-primary);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+.auth-logo a span { color: var(--clr-accent); }
+
+/* --- Card --- */
+.auth-card {
+  background: var(--clr-surface);
+  border-radius: var(--radius);
+  padding: 36px 32px;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--clr-accent);
+  animation: fadeUp 0.3s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.auth-card h2 {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  color: var(--clr-primary);
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+/* --- Form groups --- */
+.form-group { margin-bottom: 18px; }
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--clr-muted);
+  margin-bottom: 7px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--clr-border);
+  border-radius: 9px;
+  font-size: 0.97rem;
+  font-family: var(--font-body);
+  background: #faf9f7;
+  color: var(--clr-text);
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  background: #fff;
+  border-color: var(--clr-accent);
+  box-shadow: 0 0 0 3.5px rgba(212,132,90,0.15);
+}
+
+.form-group input::placeholder { color: #bbb; }
+
+/* --- Submit button --- */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  background: var(--clr-accent);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  margin-top: 8px;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.15s;
+}
+.submit-btn:hover {
+  background: #c4734a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(212,132,90,0.35);
+}
+.submit-btn:active { transform: translateY(0); }
+
+/* Register page: green button */
+.submit-btn--register { background: var(--clr-success); }
+.submit-btn--register:hover {
+  background: #2d6649;
+  box-shadow: 0 4px 14px rgba(58,125,90,0.3);
+}
+
+/* --- Footer link --- */
+.auth-footer {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 0.88rem;
+  color: var(--clr-muted);
+}
+.auth-footer a {
+  color: var(--clr-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.auth-footer a:hover { text-decoration: underline; }
+
+/* --- Flash messages --- */
+.flash-container { margin-bottom: 18px; }
+
+.flash-message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 16px;
+  border-radius: 9px;
+  margin-bottom: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  border-left: 4px solid transparent;
+  animation: slideIn 0.2s ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-6px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.flash-success { background: #eaf5ef; color: #1e5c3a; border-color: var(--clr-success); }
+.flash-error   { background: #fdecea; color: #7b1c1c; border-color: var(--clr-error); }
+.flash-info    { background: #e8f4f8; color: #1a4f66; border-color: #5ba4c4; }
+
+.flash-close {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.15s;
+}
+.flash-close:hover { opacity: 1; }
+
+/* --- Responsive --- */
+@media (max-width: 460px) {
+  .auth-card { padding: 28px 20px; }
+  .auth-logo a { font-size: 1.6rem; }
+}

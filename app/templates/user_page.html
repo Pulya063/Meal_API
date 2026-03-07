@@ -1,9 +1,74 @@
 {% extends "base_page.html" %}
-{% block title %}MyMeals{% endblock %}
-
-{% block extra_styles %}
-{% endblock %}
+{% block title %}MyMeals — Профіль{% endblock %}
 
 {% block content %}
+{% if user %}
+    <div class="profile-card">
+        <h2>👤 {{ user.username }}</h2>
+        <div class="profile-field">
+            <span class="label">Дата народження:</span>
+            <span class="value">{{ user.birthdate }}</span>
+        </div>
+        <div class="profile-field">
+            <span class="label">ID:</span>
+            <span class="value" style="font-size:0.78rem;color:#aaa;">{{ user.user_id }}</span>
+        </div>
+    </div>
 
+    <div class="meals-section">
+        <div class="page-header">
+            <h3>🍽️ Останні страви</h3>
+            <a href="{{ url_for('meal.get_user_meals', user_id=user.user_id) }}" class="btn-create">Переглянути всі</a>
+        </div>
+
+        {% if user.meals %}
+            <div class="meals-grid">
+                {% for meal in user.meals %}
+                    <a href="{{ url_for('meal.get_meal_detail', meal_id=meal.id) }}" class="meal-card" style="text-decoration: none; display: block;">
+                        <h3>{{ meal.title }}</h3>
+                        <p>{{ meal.description | truncate(80) }}</p>
+                        <div class="meal-meta">
+                            <span>{{ meal.date }}</span>
+                            <span class="calories-badge">{{ meal.calories }} ккал</span>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="empty-state" style="padding: 40px 0;">
+                <p>Цей користувач ще не додав жодної страви.</p>
+                <a href="{{ url_for('meal.create_meal') }}" class="btn-create">+ Створити першу</a>
+            </div>
+        {% endif %}
+    </div>
+
+{% elif users %}
+    <h1 class="page-title">👥 Усі користувачі</h1>
+    <table class="users-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Ім'я користувача</th>
+                <th>Дата народження</th>
+                <th>Страви</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for u in users %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td><a href="/user/{{ u.user_id }}" class="user-link">{{ u.username }}</a></td>
+                <td>{{ u.birthdate }}</td>
+                <td>{{ u.meals | length }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <div class="not-found">
+        <div style="font-size:3rem;margin-bottom:12px;">🔍</div>
+        <p>Користувача не знайдено.</p>
+        <a href="/" class="user-link" style="display:inline-block;margin-top:14px;">← На головну</a>
+    </div>
+{% endif %}
 {% endblock %}

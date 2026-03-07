@@ -5,29 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c57c964-ecb9-494b-8470-1c25c2fc6fb5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/other/ai_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/other/decorators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/base_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/get_recipe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/login_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/main_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/register_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/user_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Meal_API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Meal_API.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/meal_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/user_meals.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/alembic/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/db/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/db/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/db/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/db/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/db/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/db/schema.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/other/ai_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/other/ai_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/other/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/other/decorators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/router/crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/router/crud.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/router/oauth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/other/oauth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/router/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/router/router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/streamlit.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/get_recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/get_recipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/login_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/main_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/register_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/register_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/user_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,43 +90,72 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Flask server.Flask (main.py).executor&quot;: &quot;Run&quot;,
-    &quot;Flask server.Flask (port 8000).executor&quot;: &quot;Run&quot;,
-    &quot;Flask server.Flask (port=8000).executor&quot;: &quot;Run&quot;,
-    &quot;Flask server.Flask.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.router.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Flask server.Flask (app/main.py).executor": "Run",
+    "Flask server.Flask (main.py).executor": "Run",
+    "Flask server.Flask (port 8000).executor": "Run",
+    "Flask server.Flask (port=8000).executor": "Run",
+    "Flask server.Flask.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.crud.executor": "Debug",
+    "Python.main.executor": "Debug",
+    "Python.router.executor": "Debug",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Pulya/PycharmProjects/Meal_API/app/templates",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pulya\PycharmProjects\Meal_API\app\templates" />
+      <recent name="C:\Users\Pulya\PycharmProjects\Meal_API\app\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Pulya\PycharmProjects\Meal_API\app\other" />
       <recent name="C:\Users\Pulya\PycharmProjects\Meal_API\app\router" />
       <recent name="C:\Users\Pulya\PycharmProjects\Meal_API\app" />
       <recent name="C:\Users\Pulya\PycharmProjects\Meal_API\db" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Flask (app/main.py)" type="Python.FlaskServer" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+      <option name="additionalOptions" value="--port 8000 --reload" />
+      <option name="flaskDebug" value="true" />
+      <module name="Meal_API" />
+      <option name="target" value="$PROJECT_DIR$/app/main.py" />
+      <option name="targetType" value="PATH" />
+      <option name="ENV_FILES" value="$PROJECT_DIR$/app/.env" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.14" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Pulya\PycharmProjects\Meal_API" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -146,17 +177,32 @@
       <workItem from="1772652049543" duration="4546000" />
       <workItem from="1772656815213" duration="65000" />
       <workItem from="1772656917549" duration="17885000" />
-      <workItem from="1772754442551" duration="541000" />
+      <workItem from="1772754442551" duration="1930000" />
+      <workItem from="1772757240349" duration="8174000" />
+      <workItem from="1772871498370" duration="10671000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Meal_API$main.coverage" NAME="main Coverage Results" MODIFIED="1772754556830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/Meal_API$Flask.coverage" NAME="Flask (app/main.py) Coverage Results" MODIFIED="1772907362016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\Pulya\PycharmProjects\Meal_API" />
+    <SUITE FILE_PATH="coverage/Meal_API$main.coverage" NAME="main Coverage Results" MODIFIED="1772874225380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/Meal_API$Flask__port_8000_.coverage" NAME="Flask (main.py) Coverage Results" MODIFIED="1772659520382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\Pulya\PycharmProjects\URL_Shortener" />
     <SUITE FILE_PATH="coverage/Meal_API$Flask__main_py_.coverage" NAME="Flask (main.py) Coverage Results" MODIFIED="1772751626213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../URL_Shortener" />
+    <SUITE FILE_PATH="coverage/Meal_API$crud.coverage" NAME="crud Coverage Results" MODIFIED="1772901799176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/router" />
     <SUITE FILE_PATH="coverage/Meal_API$router.coverage" NAME="router Coverage Results" MODIFIED="1772753467457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/router" />
   </component>
   <component name="github-copilot-workspace">
