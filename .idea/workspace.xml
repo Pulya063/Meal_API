@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c57c964-ecb9-494b-8470-1c25c2fc6fb5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.env-example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/meal_tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/test_user_unit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/user_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/0ecafae4edf1_second_migration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/a209a9f443a4_third_migration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/bb63ec630e92_first_migration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/db/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/db/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/db/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/db/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/db/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/db/schema.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/other/oauth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/other/oauth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/router/crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/router/crud.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/router/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/router/router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +160,7 @@
       <workItem from="1772656917549" duration="17885000" />
       <workItem from="1772754442551" duration="1930000" />
       <workItem from="1772757240349" duration="8174000" />
-      <workItem from="1772871498370" duration="16782000" />
+      <workItem from="1772871498370" duration="17259000" />
     </task>
     <servers />
   </component>
