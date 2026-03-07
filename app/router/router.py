@@ -12,8 +12,6 @@ def main_page():
     form = CreateMealForm()
     return render_template('main_page.html', form=form)
 
-
-
 @meal.route("/create_meal", methods=["GET", "POST"])
 @check_user_access
 def create_meal():
@@ -22,7 +20,7 @@ def create_meal():
         if request.method == "POST":
             if form.validate():
                 db_meal = crud.create_meal(form)
-                if not db_meal:
+                if db_meal is None:
                     raise Exception("Meal haven't created", "error")
                 else:
                     flash("Meal created successfully", "success")

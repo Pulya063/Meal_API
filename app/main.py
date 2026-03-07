@@ -4,7 +4,6 @@ from app.router.router import meal
 app = Flask(__name__)
 app.secret_key = "secret_key"
 
-
 Base.metadata.create_all(bind=engine)
 app.register_blueprint(meal, url_prefix='/')
 

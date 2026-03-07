@@ -5,31 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c57c964-ecb9-494b-8470-1c25c2fc6fb5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/meal_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/user_meals.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/.env-example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/meal_tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/test_user_unit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/user_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/alembic/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/script.py.mako" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/0ecafae4edf1_second_migration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/a209a9f443a4_third_migration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/bb63ec630e92_first_migration.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/db/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/db/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/db/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/db/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/db/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/db/schema.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/other/ai_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/other/ai_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/other/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/other/decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/other/oauth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/other/oauth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/router/crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/router/crud.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/router/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/router/router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/get_recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/get_recipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/login_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/main_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/register_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/register_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/user_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +102,9 @@
     "Flask server.Flask (port=8000).executor": "Run",
     "Flask server.Flask.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests in conftest.py.executor": "Run",
+    "Python tests.Python tests in meal_tests.py.executor": "Run",
+    "Python tests.Python tests in user_tests.py.executor": "Run",
     "Python.crud.executor": "Debug",
     "Python.main.executor": "Debug",
     "Python.router.executor": "Debug",
@@ -129,6 +134,7 @@
       <recent name="C:\Users\Pulya\PycharmProjects\Meal_API\app\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pulya\PycharmProjects\Meal_API" />
       <recent name="C:\Users\Pulya\PycharmProjects\Meal_API\app\other" />
       <recent name="C:\Users\Pulya\PycharmProjects\Meal_API\app\router" />
       <recent name="C:\Users\Pulya\PycharmProjects\Meal_API\app" />
@@ -147,7 +153,7 @@
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="SDK_NAME" value="Python 3.14" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\Pulya\PycharmProjects\Meal_API" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -179,7 +185,7 @@
       <workItem from="1772656917549" duration="17885000" />
       <workItem from="1772754442551" duration="1930000" />
       <workItem from="1772757240349" duration="8174000" />
-      <workItem from="1772871498370" duration="10671000" />
+      <workItem from="1772871498370" duration="16782000" />
     </task>
     <servers />
   </component>
@@ -203,6 +209,7 @@
     <SUITE FILE_PATH="coverage/Meal_API$Flask__port_8000_.coverage" NAME="Flask (main.py) Coverage Results" MODIFIED="1772659520382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\Pulya\PycharmProjects\URL_Shortener" />
     <SUITE FILE_PATH="coverage/Meal_API$Flask__main_py_.coverage" NAME="Flask (main.py) Coverage Results" MODIFIED="1772751626213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../URL_Shortener" />
     <SUITE FILE_PATH="coverage/Meal_API$crud.coverage" NAME="crud Coverage Results" MODIFIED="1772901799176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/router" />
+    <SUITE FILE_PATH="coverage/Meal_API$.coverage" NAME=" Coverage Results" MODIFIED="1772916841091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Meal_API$router.coverage" NAME="router Coverage Results" MODIFIED="1772753467457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/router" />
   </component>
   <component name="github-copilot-workspace">

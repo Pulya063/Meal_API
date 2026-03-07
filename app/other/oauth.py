@@ -1,9 +1,12 @@
 from datetime import datetime, UTC, timedelta
-from uuid import uuid4
+from dotenv import load_dotenv
 from jose import jwt
 from passlib.context import CryptContext
+import os
 
-SECURITY_KEY = str(uuid4())
+load_dotenv()
+
+SECURITY_KEY = os.getenv("SECURITY_KEY")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
