@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c57c964-ecb9-494b-8470-1c25c2fc6fb5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/55d56e02-84a7-4c22-9783-f8a67421883d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/55d56e02-84a7-4c22-9783-f8a67421883d/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/62b7f6e3-62cd-40d2-a2d5-73728fd84364.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/62b7f6e3-62cd-40d2-a2d5-73728fd84364/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7e78bbeb-01dc-4b87-9a99-e9bc7f9d19f1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7e78bbeb-01dc-4b87-9a99-e9bc7f9d19f1/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e1b05ea8-2cdd-4274-85f9-b86accd6f25e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e1b05ea8-2cdd-4274-85f9-b86accd6f25e/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/096302499520_your_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/alembic/versions/096302499520_whole_db_migration.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +102,7 @@
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Pulya/PycharmProjects/Meal_API/app/templates",
+    "last_opened_file_path": "C:/Users/Pulya/PycharmProjects/Meal_API",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -105,6 +114,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pulya\PycharmProjects\Meal_API" />
       <recent name="C:\Users\Pulya\PycharmProjects\Meal_API\app\templates" />
       <recent name="C:\Users\Pulya\PycharmProjects\Meal_API\app\static" />
     </key>
@@ -160,7 +170,8 @@
       <workItem from="1772656917549" duration="17885000" />
       <workItem from="1772754442551" duration="1930000" />
       <workItem from="1772757240349" duration="8174000" />
-      <workItem from="1772871498370" duration="17259000" />
+      <workItem from="1772871498370" duration="17939000" />
+      <workItem from="1772965999277" duration="1535000" />
     </task>
     <servers />
   </component>

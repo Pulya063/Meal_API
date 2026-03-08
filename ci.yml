@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [ "**" ]   # будь-яка гілка: main, dev, feature/*, тощо
+
+jobs:
+  test:
+    name: Type Check & Test
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # 1. Завантажити код репозиторію в VM
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Встановити Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      # 3. Встановити залежності + інструменти для CI
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pytest pytest-cov mypy
+
+      # 4. Перевірка типів (mypy)
+      # --ignore-missing-imports → не падає на бібліотеки без py.typed (flask, sqlalchemy і т.д.)
+      - name: Type check with mypy
+        run: mypy app/ --ignore-missing-imports
+
+      # 5. Запустити тести з підрахунком покриття
+      # --cov-fail-under=60 → CI впаде якщо покриття нижче 60%
+      - name: Run tests with coverage
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          APP_SECRET_KEY: ${{ secrets.APP_SECRET_KEY }}
+          SECURITY_KEY: ${{ secrets.SECURITY_KEY }}
+        run: |
+          pytest app/tests/ \
+            --cov=app \
+            --cov-report=term-missing \
+            --cov-fail-under=60
+
+      # 6. Зберегти звіт покриття як артефакт (доступний 7 днів)
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: .coverage
+          retention-days: 7
